@@ -37,7 +37,10 @@ def main() -> int:
         im = ImageOps.exif_transpose(Image.open(f)).convert("RGB")
         im.thumbnail((MAX, MAX), Image.LANCZOS)
         dest = OUT / (f.stem.lower().replace(" ", "-") + ".webp")
-        im.save(dest, "WEBP", quality=80, method=6)  # no exif= → metadata dropped
+        for q in (80, 72, 64, 56):  # step quality down until the file is web-friendly
+            im.save(dest, "WEBP", quality=q, method=6)  # no exif= → metadata dropped
+            if dest.stat().st_size <= 250 * 1024:
+                break
         print(f"  {f.name} → {dest} ({im.width}×{im.height}, {dest.stat().st_size // 1024} KB)")
         n += 1
     print(f"Processed {n} photo(s).")
