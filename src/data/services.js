@@ -163,7 +163,7 @@ export const services = [
       ['Does popcorn ceiling need to be tested before removal?', 'Yes, in most older homes. Acoustic ceiling texture applied before the 1980s may contain asbestos and must be tested before it is scraped or demolished.'],
     ],
     related: ['residential-demolition', 'commercial-demolition', 'chimney-demolition', 'debris-hauling'],
-    photos: ['selective-demolition-1', 'selective-demolition-2'],
+    photos: ['selective-demolition-1', 'selective-demolition-2', 'selective-demolition-3'],
   },
 
   {
