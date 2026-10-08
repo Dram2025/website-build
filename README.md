@@ -89,6 +89,15 @@ Every lead is tagged **Residential/Commercial**, **Hot/Warm/Nurture** (timeline 
 
 You own everything in this repository: code, design, written content and generated graphics. Keep the domain registrar, Netlify, Google (Search Console, Analytics, Business Profile, Ads), Resend and Twilio accounts **in the company's name and under your login**, and add any agency as a user rather than an owner.
 
+## Launch guide (Netlify + Wix)
+
+`npm run handoff` builds the production site and regenerates **`handoff/launch-guide.html`**. Open that file in any browser. It has:
+- step-by-step Netlify setup
+- step-by-step Wix setup: colors, fonts, form fields, automations, SEO
+- copy-ready content for every page: Wix URL, title tag, meta description, headings, body copy, FAQs and structured data, each with a copy button
+
+Re-run it whenever content changes so both versions stay identical. Only one version can be live on dramdemo.com at a time.
+
 ## More docs
 
 - [docs/SEO-STRATEGY.md](docs/SEO-STRATEGY.md): keyword map, local SEO, link-building plan

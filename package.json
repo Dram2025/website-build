@@ -4,13 +4,16 @@
   "private": true,
   "description": "Lead-generation website for D.RAM Demolition & Hauling (Orange County, CA)",
   "type": "module",
-  "engines": { "node": ">=18" },
+  "engines": {
+    "node": ">=18"
+  },
   "scripts": {
     "build": "node build.mjs",
     "build:prod": "node build.mjs --prod",
     "check": "node build.mjs --prod --check",
     "serve": "npx --yes serve@14.2.4 dist -l 4173",
     "dev": "node build.mjs && npx --yes serve@14.2.4 dist -l 4173",
-    "test": "node build.mjs && node scripts/audit.mjs"
+    "test": "node build.mjs && node scripts/audit.mjs",
+    "handoff": "node build.mjs --prod && node scripts/audit.mjs && node scripts/wix-pack.mjs"
   }
 }

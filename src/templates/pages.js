@@ -690,7 +690,9 @@ ${trustBar(ctx)}
   <div class="wrap split split--even">
     <div class="prose">
       <h2>Our story</h2>
-      <p>[OWNER STORY — 2–3 short paragraphs in your own words: who founded D.RAM, when, why you got into demolition, and what you want customers to know about how you run jobs. Real details build more trust than polished copy.]</p>
+      ${/* Interim copy built only from confirmed facts. Replace with your own story in your own words. */''}
+      <p>${esc(site.name)} is a Fullerton-based demolition, concrete removal and hauling company, serving homeowners, contractors and property owners across Orange County since ${esc(site.foundingYear)}.</p>
+      <p>We started D.RAM with a simple standard: give every customer a clear written price, protect the property that stays, and leave every site cleaner than we found it. Whether it’s a single patio or a full tear-down, you deal directly with the people doing the work.</p>
       <h2>How we work</h2>
       ${checklist(['Every estimate is written and itemized', 'The person who estimates your job stays your point of contact', 'We protect what stays as carefully as we remove what goes', 'Debris is recycled whenever a recycler will take it', 'We leave every site raked, swept and clean'])}
     </div>
