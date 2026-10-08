@@ -13,11 +13,11 @@ const HOME = { label: 'Home', href: '/' };
 // ═════════════════════════════════════════════════════════════════════════════
 const homeFaqs = [
   ['How much does demolition or concrete removal cost?', 'It depends on size, thickness, reinforcement, access and haul distance. We don’t quote blind: we measure on site (or price from your photos for simple jobs) and give you a free written estimate that spells out exactly what’s included.'],
-  ['Are you licensed and insured?', 'Yes. We hold an active California CSLB contractor license and carry general liability and workers’ compensation insurance. You can verify our license on the CSLB website, and we provide certificates of insurance on request.'],
+  ['Are you a local company?', 'Yes. D.RAM is based in Fullerton and works throughout Orange County. The person who estimates your job stays your point of contact until it’s done.'],
   ['Do you haul away the debris?', 'Yes — haul-off is included in every demolition and removal estimate. Concrete, asphalt and metal go to recyclers whenever possible.'],
   ['Do you handle permits?', 'For jobs that need a demolition permit, we coordinate the permit, required asbestos survey and utility disconnect sign-offs, and tell you up front what your city requires.'],
   ['How soon can you start?', 'Small concrete and hauling jobs can often be scheduled within one to two weeks. Permitted demolition depends on the city’s permit timeline. Tell us your deadline when you request an estimate.'],
-  ['Do you work with general contractors?', 'Yes. We regularly work as the demolition subcontractor for GCs and provide COIs, safety documentation and written bids. Use our commercial bid form to send plans.'],
+  ['Do you work with general contractors?', 'Yes. We work as a demolition subcontractor for GCs with written bids, clear scopes and reliable scheduling. Use our commercial bid form to send plans.'],
 ];
 
 export function home(ctx) {
@@ -40,7 +40,7 @@ export function home(ctx) {
         <a class="btn btn--outline btn--lg" href="${telHref(site)}" data-call>${icon('phone')} Call ${esc(site.phone)}</a>
       </div>
       <ul class="ticks">
-        <li>${icon('check')} CSLB licensed &amp; fully insured</li>
+        <li>${icon('check')} Locally owned in Fullerton</li>
         <li>${icon('check')} Free on-site or photo estimates</li>
         <li>${icon('check')} Debris hauled &amp; recycled</li>
       </ul>
@@ -74,7 +74,7 @@ ${trustBar(ctx)}
         <div class="aud__body">
           <p class="eyebrow">${icon('building', 'i i--sm')} GCs, property managers &amp; owners</p>
           <h3>Commercial demolition &amp; site work</h3>
-          <p>Accurate bids from your plans, insurance documentation that clears compliance, reliable crews and recycling paperwork for your diversion report.</p>
+          <p>Accurate bids from your plans, clear scopes of work, reliable crews and recycling paperwork for your diversion report.</p>
           <span class="link">For contractors &amp; commercial ${icon('arrow', 'i i--sm')}</span>
         </div>
       </a>
@@ -169,7 +169,7 @@ ${ctaBand(ctx)}`;
   return layout(ctx, {
     path: '/',
     title: 'Demolition Contractor Orange County | Concrete Removal | D.RAM',
-    description: `Licensed & insured Orange County demolition contractor: residential & commercial demolition, concrete removal and hauling. Free estimates — ${site.phone}.`,
+    description: `Orange County demolition and hauling: residential and commercial demolition, driveway and concrete removal, debris hauling. Free estimates — ${site.phone}.`,
     body,
     schema: [faqSchema(homeFaqs), { '@context': 'https://schema.org', '@type': 'WebSite', name: site.name, url: abs(site, '/') }],
     bodyClass: 'pg-home',
@@ -371,9 +371,8 @@ ${ctaBand(ctx, { title: 'Get a clear, written price', text: 'Send a few photos o
 }
 
 const comFaqs = [
-  ['What do you need to prepare a bid?', 'Plans and specifications (or a scope narrative), the site address, your bid date and any insurance or prequalification requirements. A site walk is part of every commercial bid we prepare.'],
-  ['Can you meet our insurance requirements?', 'We carry general liability, auto and workers’ compensation insurance and can provide certificates naming additional insureds. Send your requirements with the bid request so we can confirm before you award.'],
-  ['Do you have a written safety program?', 'Yes. We maintain a written Injury and Illness Prevention Program as required by Cal/OSHA, hold regular toolbox talks and prepare site-specific safety plans on request.'],
+  ['What do you need to prepare a bid?', 'Plans and specifications (or a scope narrative), the site address, your bid date and any subcontractor or prequalification requirements. A site walk is part of every commercial bid we prepare.'],
+  ['How do you handle jobsite safety?', 'Every job starts with DigAlert (811) locates and verified utility disconnects. We control dust with water, keep work zones barricaded, and coordinate with abatement contractors and other trades before we start.'],
   ['Do you provide recycling documentation?', 'Yes. We keep weight tickets from recyclers and transfer stations for construction-waste diversion reporting.'],
   ['Can you work nights or weekends?', 'Where the property and city allow it, yes — common for occupied retail centers and parking lots.'],
 ];
@@ -383,7 +382,7 @@ export function commercial(ctx) {
   const crumbs = [HOME, { label: 'Commercial', href: '/commercial/' }];
   const comServices = services.filter((s) => s.audience.includes('commercial'));
   const body = `
-${pageHero(ctx, { crumbs, eyebrow: 'For general contractors, property managers & owners', h1: 'Commercial Demolition Subcontractor for Orange County Projects', lede: 'Accurate bids from your plans, insurance paperwork that clears compliance, crews that show up on schedule, and a clean turnover to the next trade.', photoName: 'audience-commercial', ctas: false, aside: `<div class="qform"><h2 class="qform__t">Bidding a project?</h2><p class="qform__s">Send plans, drawings and scope documents securely. We walk the site and return a written bid with clear inclusions and exclusions.</p><a class="btn btn--primary btn--block btn--lg" href="/commercial-bid/">Request a Commercial Bid ${icon('arrow')}</a><a class="btn btn--ghost-dark btn--block" href="${telHref(site)}" data-call>${icon('phone')} Estimating: ${esc(site.phone)}</a><p class="form__fine">${icon('lock', 'i i--sm')} Documents are transmitted encrypted and accessible only to D.RAM staff.</p></div>` })}
+${pageHero(ctx, { crumbs, eyebrow: 'For general contractors, property managers & owners', h1: 'Commercial Demolition Subcontractor for Orange County Projects', lede: 'Accurate bids from your plans, clear scopes of work, crews that show up on schedule, and a clean turnover to the next trade.', photoName: 'audience-commercial', ctas: false, aside: `<div class="qform"><h2 class="qform__t">Bidding a project?</h2><p class="qform__s">Send plans, drawings and scope documents securely. We walk the site and return a written bid with clear inclusions and exclusions.</p><a class="btn btn--primary btn--block btn--lg" href="/commercial-bid/">Request a Commercial Bid ${icon('arrow')}</a><a class="btn btn--ghost-dark btn--block" href="${telHref(site)}" data-call>${icon('phone')} Estimating: ${esc(site.phone)}</a><p class="form__fine">${icon('lock', 'i i--sm')} Documents are transmitted encrypted and accessible only to D.RAM staff.</p></div>` })}
 ${trustBar(ctx)}
 
 <section class="sec">
@@ -392,8 +391,8 @@ ${trustBar(ctx)}
     <div class="cards4">
       <div class="icard">${icon('clipboard', 'i i--lg')}<h3>Clear scopes of work</h3><p>Bids built from your drawings with inclusions, exclusions, duration and assumptions spelled out — so change orders aren’t a surprise.</p></div>
       <div class="icard">${icon('calendar', 'i i--lg')}<h3>Scheduling reliability</h3><p>Committed mobilization dates, daily updates to your superintendent and enough equipment to hold the schedule.</p></div>
-      <div class="icard">${icon('shield', 'i i--lg')}<h3>Insurance &amp; documentation</h3><p>COIs with additional-insured endorsements, W-9, license verification and safety documentation available on request.</p></div>
-      <div class="icard">${icon('hardhat', 'i i--lg')}<h3>Safety &amp; coordination</h3><p>Written IIPP, site-specific safety plans, toolbox talks, and coordination with abatement, utilities and other trades.</p></div>
+      <div class="icard">${icon('phone', 'i i--lg')}<h3>Clear communication</h3><p>One point of contact from bid to turnover, daily progress updates and photo documentation of completed work.</p></div>
+      <div class="icard">${icon('hardhat', 'i i--lg')}<h3>Safety &amp; coordination</h3><p>DigAlert locates, dust control, barricaded work zones, and coordination with abatement, utilities and other trades.</p></div>
     </div>
   </div>
 </section>
@@ -402,10 +401,10 @@ ${trustBar(ctx)}
   <div class="wrap">
     <div class="sec__head"><p class="eyebrow">Bid process</p><h2>From plans to turnover</h2></div>
     ${steps([
-      ['Send the bid package', 'Upload plans or share a link, with your bid date and insurance requirements.'],
+      ['Send the bid package', 'Upload plans or share a link, with your bid date and any subcontract requirements.'],
       ['Site walk', 'We walk the site, verify conditions and ask our questions early.'],
       ['Written bid', 'Clear line items, inclusions, exclusions, duration and assumptions.'],
-      ['Pre-con & mobilization', 'COIs, safety plan, schedule and logistics confirmed with your team.'],
+      ['Pre-con & mobilization', 'Scope, safety plan, schedule and logistics confirmed with your team.'],
       ['Demo & haul', 'Sequenced work, daily updates, recycling with weight tickets.'],
       ['Turnover', 'Site walked with your superintendent and handed off clean.'],
     ])}
@@ -419,9 +418,9 @@ ${trustBar(ctx)}
       ${checklist(['Retail, restaurant and office tenant-improvement strip-outs', 'Small commercial and industrial building demolition', 'Warehouse slab, pit and trench removal', 'Parking lot asphalt and site concrete removal', 'Multi-family and HOA flatwork, walls and walkways', 'Site clearing and export ahead of new construction'], 'checks--dots')}
     </div>
     <div class="prose">
-      <h2>Documentation available</h2>
-      ${checklist(['Certificate of insurance (GL, auto, workers’ comp)', 'Additional-insured & waiver of subrogation endorsements', `CSLB license #${site.license.number}`, 'W-9', 'Injury & Illness Prevention Program (IIPP)', 'Recycling / diversion weight tickets'])}
-      <p><a class="link" href="/commercial-bid/">Request documents with your bid ${icon('arrow', 'i i--sm')}</a></p>
+      <h2>Included with every bid</h2>
+      ${checklist(['Written scope with inclusions and exclusions', 'Duration and proposed schedule', 'Assumptions and site conditions noted on the walk', 'W-9 on request', 'Recycling / diversion weight tickets after the job', 'Photo documentation of the completed site'])}
+      <p><a class="link" href="/commercial-bid/">Request a bid ${icon('arrow', 'i i--sm')}</a></p>
     </div>
   </div>
 </section>
@@ -449,7 +448,7 @@ ${trustBar(ctx)}
   return layout(ctx, {
     path: '/commercial/', crumbs, body,
     title: 'Commercial Demolition Subcontractor for GCs | Orange County | D.RAM',
-    description: 'Commercial demolition subcontractor for GCs, developers and property managers in Orange County. Written bids, COIs, safety program, reliable scheduling.',
+    description: 'Commercial demolition subcontractor for GCs, developers and property managers in Orange County. Written bids, clear scopes, reliable scheduling.',
     schema: [faqSchema(comFaqs)],
   });
 }
@@ -702,11 +701,15 @@ ${trustBar(ctx)}
 </section>
 <section class="sec sec--light">
   <div class="wrap">
-    <div class="sec__head"><p class="eyebrow">Credentials</p><h2>Licensed, insured and verifiable</h2><p>Don’t take our word for it — check.</p></div>
+    <div class="sec__head"><p class="eyebrow">The company</p><h2>${site.license.number ? 'Licensed and verifiable' : 'Local, accountable, easy to reach'}</h2></div>
     <div class="cards4">
-      <div class="icard">${icon('badge', 'i i--lg')}<h3>CSLB License</h3><p>License #${esc(site.license.number)}<br>${esc(site.license.classification)}</p><a class="link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">Verify at CSLB ${icon('arrow', 'i i--sm')}</a></div>
-      <div class="icard">${icon('shield', 'i i--lg')}<h3>Insurance</h3><p>${esc(site.insurance)}. Certificates available on request.</p></div>
-      <div class="icard">${icon('hardhat', 'i i--lg')}<h3>Safety program</h3><p>Written Injury &amp; Illness Prevention Program, DigAlert locates on every excavation, dust control on every job.</p></div>
+      ${site.license.number
+        ? `<div class="icard">${icon('badge', 'i i--lg')}<h3>CSLB License</h3><p>License #${esc(site.license.number)}<br>${esc(site.license.classification)}</p><a class="link" href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" target="_blank" rel="noopener">Verify at CSLB ${icon('arrow', 'i i--sm')}</a></div>`
+        : `<div class="icard">${icon('pin', 'i i--lg')}<h3>Based in ${esc(site.address.city)}</h3><p>Locally owned and operating across Orange County since ${esc(site.foundingYear)}.</p></div>`}
+      ${site.insurance
+        ? `<div class="icard">${icon('shield', 'i i--lg')}<h3>Insurance</h3><p>${esc(site.insurance)}. Certificates available on request.</p></div>`
+        : `<div class="icard">${icon('phone', 'i i--lg')}<h3>One point of contact</h3><p>The person who estimates your job is the person you call — from first visit to final clean-up.</p></div>`}
+      <div class="icard">${icon('hardhat', 'i i--lg')}<h3>Safety on every job</h3><p>DigAlert locates before any excavation, verified utility disconnects, and dust control on every job.</p></div>
       <div class="icard">${icon('recycle', 'i i--lg')}<h3>Recycling</h3><p>Concrete, asphalt and metal routed to recyclers, with weight tickets for diversion reports.</p></div>
     </div>
   </div>
@@ -725,8 +728,8 @@ ${reviewsBlock(ctx)}
 ${ctaBand(ctx)}`;
   return layout(ctx, {
     path: '/about/', crumbs, body,
-    title: 'About D.RAM Demolition | Licensed Orange County Contractor',
-    description: 'Meet D.RAM Demolition & Hauling — a licensed, insured Orange County demolition and concrete removal contractor. Verify our CSLB license and see our equipment.',
+    title: 'About D.RAM Demolition & Hauling | Fullerton, Orange County',
+    description: 'Meet D.RAM Demolition & Hauling — a locally owned Fullerton demolition, concrete removal and hauling company serving all of Orange County since 2024.',
   });
 }
 
@@ -749,7 +752,7 @@ ${pageHero(ctx, { crumbs, eyebrow: 'Contact', compact: true, h1: 'Contact D.RAM 
         <dl class="facts">
           <dt>Hours</dt><dd>${site.hours.map((h) => `${esc(h.days)}: ${fmtTime(h.open)} – ${fmtTime(h.close)}`).join('<br>')}</dd>
           <dt>Based in</dt><dd>${esc(site.address.city)}, CA — serving all of Orange County</dd>
-          <dt>License</dt><dd>CSLB #${esc(site.license.number)}</dd>
+          ${site.license.number ? `<dt>License</dt><dd>CSLB #${esc(site.license.number)}</dd>` : ''}
         </dl>
         <a class="btn btn--ghost-dark btn--block" href="/estimate/">${icon('clipboard')} Detailed estimate form</a>
         <a class="btn btn--ghost-dark btn--block" href="/commercial-bid/">${icon('building')} Commercial bid request</a>

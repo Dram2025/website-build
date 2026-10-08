@@ -102,10 +102,10 @@ Sitemap: ${base}/sitemap.xml
 `);
 
 const host = new URL(base).host;
-const apex = host.replace(/^www\./, '');
-fs.writeFileSync(path.join(OUT, '_redirects'), `# Canonical host (apex → www) — keeps one indexable version of every URL
-https://${apex}/*  ${base}/:splat  301!
-http://${apex}/*   ${base}/:splat  301!
+const alt = host.startsWith('www.') ? host.slice(4) : `www.${host}`;
+fs.writeFileSync(path.join(OUT, '_redirects'), `# Canonical host — keeps one indexable version of every URL
+https://${alt}/*  ${base}/:splat  301!
+http://${alt}/*   ${base}/:splat  301!
 
 # Friendly / legacy URLs
 /quote            /estimate/          301

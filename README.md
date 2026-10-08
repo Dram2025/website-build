@@ -74,7 +74,7 @@ Set these in Netlify → Site configuration → Environment variables. Each chan
 
 | Variable | Purpose |
 |---|---|
-| `RESEND_API_KEY`, `LEAD_FROM` | Sends email via [Resend](https://resend.com) (verify your domain there). `LEAD_FROM` e.g. `D.RAM Demolition <estimates@dramdemolition.com>` |
+| `RESEND_API_KEY`, `LEAD_FROM` | Sends email via [Resend](https://resend.com) (verify your domain there). `LEAD_FROM` e.g. `D.RAM Demolition <estimates@dramdemo.com>` |
 | `LEAD_NOTIFY_TO` | Office inbox(es) for lead alerts, comma-separated |
 | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM` | Customer confirmation texts (opt-in only) + owner alerts. US numbers need A2P 10DLC registration. |
 | `OWNER_SMS_TO` | Your cell, for instant alerts on **Hot** or **High value** leads |

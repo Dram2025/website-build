@@ -173,10 +173,14 @@ export const locations = [
 // Cities served without a dedicated page (yet). Write a page only when you can
 // add genuinely local content — a completed project there is the best start.
 export const otherCities = [
-  'Brea', 'Buena Park', 'Costa Mesa', 'Cypress', 'Fountain Valley', 'Garden Grove',
-  'La Habra', 'La Palma', 'Los Alamitos', 'Newport Beach', 'Placentia', 'Stanton',
-  'Tustin', 'Villa Park', 'Westminster', 'Yorba Linda', 'Lake Forest', 'Costa Mesa',
-].filter((c, i, a) => a.indexOf(c) === i).sort();
+  'Aliso Viejo', 'Brea', 'Buena Park', 'Costa Mesa', 'Cypress', 'Dana Point', 'Fountain Valley',
+  'Garden Grove', 'La Habra', 'La Palma', 'Laguna Beach', 'Laguna Hills', 'Laguna Niguel', 'Laguna Woods',
+  'Lake Forest', 'Los Alamitos', 'Mission Viejo', 'Newport Beach', 'Placentia', 'Rancho Santa Margarita',
+  'San Clemente', 'San Juan Capistrano', 'Seal Beach', 'Stanton', 'Tustin', 'Villa Park', 'Westminster',
+  'Yorba Linda',
+  // unincorporated communities
+  'Coto de Caza', 'Ladera Ranch', 'Midway City', 'North Tustin', 'Rancho Mission Viejo', 'Rossmoor',
+].sort();
 
 // Neighboring Southern California markets — by arrangement.
 export const regionalMarkets = ['Whittier', 'La Mirada', 'Long Beach', 'Cerritos', 'Chino Hills', 'Corona'];

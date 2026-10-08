@@ -17,7 +17,7 @@ Work top to bottom. Items marked ⚑ block launch.
 ## Hosting & domain
 - [ ] Netlify site connected to the GitHub repo. The build passes.
 - [ ] Custom domain added, HTTPS certificate issued, `site.url` matches.
-- [ ] Apex → www redirect works (`curl -I https://dramdemolition.com`).
+- [ ] Apex → www redirect works (`curl -I https://dramdemo.com`).
 - [ ] If replacing an old site: map old URLs → new URLs in `build.mjs` (`_redirects` section).
 
 ## Forms & lead routing
@@ -38,7 +38,7 @@ Work top to bottom. Items marked ⚑ block launch.
 
 ## Search
 - [ ] Google Search Console: add the domain property, verify (DNS, or set `gscVerification`).
-- [ ] Submit `https://www.dramdemolition.com/sitemap.xml`.
+- [ ] Submit `https://www.dramdemo.com/sitemap.xml`.
 - [ ] URL Inspection → request indexing for home, 14 services, 6 cities.
 - [ ] Bing Webmaster Tools: import from Search Console.
 - [ ] Rich Results Test on home, one service and one city page: no errors.

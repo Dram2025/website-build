@@ -60,8 +60,10 @@ export function pageHero(ctx, { crumbs, eyebrow, h1, lede, photoName, aside, cta
 }
 
 export function trustTicks(ctx) {
+  const { site } = ctx;
+  const first = site.license.number && site.insurance ? 'Licensed &amp; insured' : site.license.number ? 'CSLB licensed' : 'Locally owned in Fullerton';
   return `<ul class="ticks">
-  <li>${icon('check')} Licensed &amp; insured</li>
+  <li>${icon('check')} ${first}</li>
   <li>${icon('check')} Free written estimates</li>
   <li>${icon('check')} Haul-off included</li>
 </ul>`;
@@ -69,13 +71,15 @@ export function trustTicks(ctx) {
 
 export function trustBar(ctx) {
   const { site } = ctx;
+  // Credential badges appear only once the matching site.js value is filled in.
   const items = [
-    ['badge', 'CSLB Licensed', `Lic. #${site.license.number}`],
-    ['shield', 'Fully Insured', 'Liability & workers’ comp'],
-    ['hardhat', `${site.yearsExperience} Years`, 'Demolition experience'],
+    site.license.number ? ['badge', 'CSLB Licensed', `Lic. #${site.license.number}`] : ['pin', 'Locally Owned', `Based in ${site.address.city}, CA`],
+    site.insurance ? ['shield', site.bonded ? 'Insured & Bonded' : 'Fully Insured', site.insurance] : null,
+    site.yearsExperience ? ['hardhat', `${site.yearsExperience} Years`, 'Demolition experience'] : ['calendar', `Since ${site.foundingYear}`, 'Serving Orange County'],
     ['clipboard', 'Written Estimates', 'Free, itemized, on site'],
+    site.insurance ? null : ['truck', 'Haul-Off Included', 'Loaded, hauled, swept'],
     ['recycle', 'Debris Recycled', 'Concrete, asphalt & metal'],
-  ];
+  ].filter(Boolean);
   return `<section class="trust" aria-label="Why customers trust D.RAM">
   <div class="wrap trust__in">
     ${items.map(([ic, t, s]) => `<div class="trust__item">${icon(ic, 'i i--lg')}<div><strong>${esc(t)}</strong><span>${esc(s)}</span></div></div>`).join('')}
@@ -308,7 +312,7 @@ export function bidForm(ctx) {
       <div class="field"><label for="bf-wage">Prevailing wage?</label><select id="bf-wage" name="prevailing_wage"><option>Not sure</option><option>No</option><option>Yes</option></select></div>
     </div>
     <div class="field"><span class="label" id="bs-l">Scope includes</span><div class="opts opts--wrap" role="group" aria-labelledby="bs-l">${checks('scope', ['Full building demolition', 'Interior / selective demolition', 'Slab & foundation removal', 'Site concrete & flatwork', 'Asphalt / parking lot removal', 'Walls & retaining walls', 'Hauling & export', 'Recycling documentation'])}</div></div>
-    <div class="field"><label for="bf-ins">Insurance &amp; compliance requirements</label><textarea id="bf-ins" name="insurance_requirements" rows="2" placeholder="Additional insured, waiver of subrogation, limits, prequalification platform, etc."></textarea></div>
+    <div class="field"><label for="bf-ins">Subcontract &amp; prequalification requirements</label><textarea id="bf-ins" name="insurance_requirements" rows="2" placeholder="Insurance limits, prequalification platform, subcontract terms, etc."></textarea></div>
     <div class="field"><label for="bf-notes">Scope notes</label><textarea id="bf-notes" name="details" rows="4" placeholder="Phasing, working hours, abatement status, special conditions…"></textarea></div>
   </fieldset>
   <fieldset>

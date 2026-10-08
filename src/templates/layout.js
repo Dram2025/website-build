@@ -91,6 +91,7 @@ function tracking(site) {
 function header(ctx, path) {
   const { site, nav } = ctx;
   const lic = site.license.number;
+  const cred = lic && site.insurance ? `Licensed &amp; insured · CSLB Lic. #${esc(lic)}` : lic ? `CSLB Lic. #${esc(lic)}` : `Locally owned · Based in ${esc(site.address.city)}, CA`;
   const links = nav
     .map((n) => `<li><a href="${n.href}"${path.startsWith(n.href) ? ' aria-current="page"' : ''}>${esc(n.label)}</a></li>`)
     .join('');
@@ -98,8 +99,8 @@ function header(ctx, path) {
 <a class="skip" href="#main">Skip to content</a>
 <div class="topbar">
   <div class="wrap topbar__in">
-    <p>${icon('shield', 'i i--sm')} Licensed &amp; insured · CSLB Lic. #${esc(lic)}</p>
-    <p class="topbar__hide-sm">${icon('pin', 'i i--sm')} Serving Orange County &amp; Southern California</p>
+    <p>${icon(lic ? 'shield' : 'pin', 'i i--sm')} ${cred}</p>
+    <p class="topbar__hide-sm">${icon('pin', 'i i--sm')} Serving all of Orange County</p>
     <p class="topbar__hide-sm">${icon('clock', 'i i--sm')} ${esc(site.hours[0].days)} ${fmtTime(site.hours[0].open)}–${fmtTime(site.hours[0].close)}</p>
   </div>
 </div>
@@ -148,7 +149,9 @@ function footer(ctx) {
         <a href="mailto:${esc(site.email)}" data-email>${icon('mail', 'i i--sm')} ${esc(site.email)}</a><br>
         ${icon('pin', 'i i--sm')} ${site.address.street ? esc(site.address.street) + ', ' : ''}${esc(site.address.city)}, ${esc(site.address.region)} ${esc(site.address.postalCode)}
       </p>
-      <p class="ftr__lic">CSLB License #${esc(site.license.number)}<br><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" rel="noopener" target="_blank">Verify our license at cslb.ca.gov</a></p>
+      ${site.license.number
+        ? `<p class="ftr__lic">CSLB License #${esc(site.license.number)}<br><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" rel="noopener" target="_blank">Verify our license at cslb.ca.gov</a></p>`
+        : `<p class="ftr__lic">${esc(site.name)} is not licensed by the California Contractors State License Board.</p>`}
       <ul class="ftr__hours">${site.hours.map((h) => `<li><span>${esc(h.days)}</span> ${fmtTime(h.open)} – ${fmtTime(h.close)}</li>`).join('')}</ul>
     </div>
     <div><h2 class="ftr__h">Services</h2><ul class="ftr__list ftr__list--2">${svc}</ul></div>

@@ -8,36 +8,40 @@
 export const site = {
   name: 'D.RAM Demolition & Hauling',
   shortName: 'D.RAM Demolition',
-  url: 'https://www.dramdemolition.com', // [CONFIRM DOMAIN] — used for canonicals + sitemap
+  url: 'https://www.dramdemo.com', // used for canonicals + sitemap; dramdemo.com redirects here
   phone: '714-872-6566',
   phoneE164: '+17148726566',
-  email: '[LEAD EMAIL, e.g. estimates@dramdemolition.com]',
+  email: 'david@dramdemo.com',
 
-  // California Contractors State License Board. Shown in header trust bar,
-  // footer, and schema. Verify at https://www.cslb.ca.gov/
+  // California Contractors State License Board. While `number` is empty the
+  // site makes NO license claims and shows the not-licensed advertising
+  // disclosure (Bus. & Prof. Code §7027.2) in the footer. When you're licensed,
+  // fill these in — badges, schema and the "verify" link switch on automatically.
   license: {
-    number: '[CSLB LICENSE #]',
-    classification: '[LICENSE CLASS, e.g. C-21 Building Moving/Demolition]',
+    number: '', // e.g. '1234567'
+    classification: '', // e.g. 'C-21 Building Moving/Demolition'
   },
-  insurance: 'General liability & workers’ compensation', // certificates available on request
-  yearsExperience: '[YEARS]', // e.g. "15+"
-  foundingYear: '[YEAR FOUNDED]',
+  // Set to a description (e.g. 'General liability & workers’ compensation')
+  // only once policies are active. Empty = no insurance claims anywhere.
+  insurance: '',
+  bonded: false,
+  yearsExperience: '', // personal years of demolition experience, e.g. '10+' (empty = hidden)
+  foundingYear: '2024',
 
   // Service-area business: leave street blank to hide it (Google allows hidden
   // addresses for SABs). City/region are still used in schema.
   address: {
     street: '',
-    city: 'Fullerton', // [CONFIRM base city]
+    city: 'Fullerton',
     region: 'CA',
     postalCode: '',
     country: 'US',
   },
-  geo: { lat: 33.8704, lng: -117.9242 }, // [CONFIRM] approximate base location
+  geo: { lat: 33.8704, lng: -117.9242 }, // approximate (city center) — street address stays hidden
 
   hours: [
     { days: 'Monday – Friday', open: '07:00', close: '18:00', schemaDays: ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'] },
-    { days: 'Saturday', open: '08:00', close: '14:00', schemaDays: ['Saturday'] },
-  ], // [CONFIRM HOURS]
+  ],
 
   // Profiles — leave '' to hide. Google Business Profile is the most important.
   social: {

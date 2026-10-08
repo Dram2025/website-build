@@ -71,18 +71,17 @@ export const services = [
     keyword: 'commercial demolition contractor Orange County',
     title: 'Commercial Demolition Contractor in Orange County | D.RAM',
     description:
-      'Commercial demolition for general contractors, developers and property owners in Orange County. Insured crews, written safety program. Request a bid.',
+      'Commercial demolition for general contractors, developers and property owners in Orange County. Clear written bids, reliable crews. Request a bid.',
     h1: 'Commercial Demolition Contractor in Orange County',
     lede: 'Building, site and tenant demolition for general contractors, developers and property owners — bid accurately, staffed reliably, and finished on the schedule your next trade depends on.',
     card: 'Building, site and tenant demolition for GCs, developers and owners.',
     intro: [
-      'On a commercial job, demolition is the first line on the schedule and every other trade is waiting behind it. What a general contractor needs from a demo sub is simple to say and rare to get: a bid that matches the drawings, a crew that shows up the day it was promised, insurance paperwork that clears compliance the first time, and a site handed back clean.',
+      'On a commercial job, demolition is the first line on the schedule and every other trade is waiting behind it. What a general contractor needs from a demo sub is simple to say and rare to get: a bid that matches the drawings, a crew that shows up the day it was promised, clear communication, and a site handed back clean.',
       'We work on retail pads, small office and industrial buildings, restaurants, parking lots and site work across Orange County and neighboring Southern California markets. We read the plans, walk the site, and turn around a clear bid with inclusions and exclusions spelled out — no surprises at change-order time.',
     ],
     included: [
       'Bid review against plans, specifications and demolition notes',
-      'Certificates of insurance with additional-insured endorsements on request',
-      'Site-specific safety plan and daily toolbox talks',
+      'Site-specific safety planning and dust control',
       'Coordination with your abatement contractor and utility providers',
       'Structural demolition, slab and footing removal, site flatwork and paving removal',
       'Material separation and recycling documentation for diversion reporting',
@@ -90,7 +89,7 @@ export const services = [
     ],
     process: [
       ['Bid', 'Send us plans, specs and a site address. We walk the site and return a written bid with clear inclusions, exclusions and duration.'],
-      ['Pre-construction', 'Insurance certificates, safety plan, schedule and site logistics are confirmed with your project team.'],
+      ['Pre-construction', 'Scope, safety plan, schedule and site logistics are confirmed with your project team.'],
       ['Mobilization', 'Equipment, fencing and erosion control go in. Utility terminations and abatement clearances are verified before any structure is touched.'],
       ['Demolition', 'Work proceeds in the sequence agreed with your superintendent, with dust control and traffic control in place.'],
       ['Haul-off & recycling', 'Materials are separated on site and hauled to recyclers; weight tickets are kept for your diversion report.'],
@@ -106,8 +105,8 @@ export const services = [
     local:
       'Commercial work in Orange County often happens beside occupied buildings — a shopping center that stays open, an office park with tenants next door. We plan noise, dust and truck routing around those neighbors and around the working-hour limits set by each city’s municipal code.',
     faqs: [
-      ['Do you work as a subcontractor to general contractors?', 'Yes. Most of our commercial work is for general contractors. We provide certificates of insurance, sign standard subcontract agreements and coordinate directly with your superintendent.'],
-      ['Can you provide additional-insured endorsements?', 'Yes. Tell us your requirements when you request a bid and we will have our insurance provider issue certificates naming the required parties.'],
+      ['Do you work as a subcontractor to general contractors?', 'Yes. We work for general contractors and coordinate directly with your superintendent. Send your subcontract requirements with your bid request so we can review them up front.'],
+      ['Can you work next to occupied buildings?', 'Yes. We plan noise, dust, working hours and truck routes around tenants and neighbors who stay open during the work.'],
       ['Do you handle asbestos abatement?', 'Abatement is performed by a licensed abatement contractor. We coordinate with them, sequence our work behind their clearance, and can recommend firms if you do not have one.'],
       ['How quickly can you turn around a bid?', 'For most small and mid-size projects we can return a bid within a few business days of receiving plans and walking the site. Tell us your bid date and we will confirm whether we can meet it.'],
       ['Do you provide recycling documentation?', 'Yes. We keep weight tickets from recyclers and transfer stations so you can complete construction-waste diversion reports required by your jurisdiction or green building program.'],
