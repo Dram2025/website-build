@@ -59,7 +59,7 @@ One primary intent per page. Don't create a second page for the same intent, bec
 ## 4. Google Business Profile (the biggest local lever)
 
 1. Primary category: **Demolition contractor**. Secondary: Concrete contractor, Excavating contractor, Debris removal service (choose only ones you actually do).
-2. Website link: `https://www.dramdemo.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`. GA4 then separates GBP traffic, and the form captures it on every lead.
+2. Website link: `https://dramdemo.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`. GA4 then separates GBP traffic, and the form captures it on every lead.
 3. Services list: mirror the 14 service names.
 4. Service areas: the cities you actually serve (max 20).
 5. Name, phone and city must match the site exactly (NAP consistency).

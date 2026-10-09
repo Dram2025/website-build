@@ -8,7 +8,7 @@
 export const site = {
   name: 'D.RAM Demolition & Hauling',
   shortName: 'D.RAM Demolition',
-  url: 'https://www.dramdemo.com', // used for canonicals + sitemap; dramdemo.com redirects here
+  url: 'https://dramdemo.com', // primary domain in Netlify; www.dramdemo.com redirects here
   phone: '714-872-6566',
   phoneE164: '+17148726566',
   email: 'david@dramdemo.com',
