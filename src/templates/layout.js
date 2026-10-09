@@ -151,7 +151,7 @@ function footer(ctx) {
       </p>
       ${site.license.number
         ? `<p class="ftr__lic">CSLB License #${esc(site.license.number)}<br><a href="https://www.cslb.ca.gov/OnlineServices/CheckLicenseII/CheckLicense.aspx" rel="noopener" target="_blank">Verify our license at cslb.ca.gov</a></p>`
-        : `<p class="ftr__lic">${esc(site.name)} is not licensed by the California Contractors State License Board.</p>`}
+        : ''}
       <ul class="ftr__hours">${site.hours.map((h) => `<li><span>${esc(h.days)}</span> ${fmtTime(h.open)} – ${fmtTime(h.close)}</li>`).join('')}</ul>
     </div>
     <div><h2 class="ftr__h">Services</h2><ul class="ftr__list ftr__list--2">${svc}</ul></div>

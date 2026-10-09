@@ -196,7 +196,7 @@ details.ld{padding:0 18px 16px}details.ld pre{white-space:pre-wrap;word-break:br
   <h3>2. Header, footer & mobile</h3>
   <ul>
     <li><b>Header:</b> logo · menu (Residential, Commercial, Services, Service Areas, Projects, About) · phone as a clickable link (<code>tel:${esc(site.phoneE164)}</code>) · orange <b>Free Estimate</b> button. Set it to stay pinned when scrolling.</li>
-    <li><b>Footer:</b> logo, phone, email, “Fullerton, CA · Serving all of Orange County”, hours, links to all services and city pages, Privacy Policy, and this line (required while unlicensed): <i>“${esc(site.name)} is not licensed by the California Contractors State License Board.”</i></li>
+    <li><b>Footer:</b> logo, phone, email, “Fullerton, CA · Serving all of Orange County”, hours, links to all services and city pages, Privacy Policy</li>
     <li><b>Mobile:</b> Mobile editor → <b>Quick Action Bar</b> → add <b>Call</b> (${esc(site.phone)}) and a link to the Free Estimate page. Check every page in mobile view.</li>
   </ul>
   <h3>3. Forms (Wix Forms)</h3>

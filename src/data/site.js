@@ -14,9 +14,8 @@ export const site = {
   email: 'david@dramdemo.com',
 
   // California Contractors State License Board. While `number` is empty the
-  // site makes NO license claims and shows the not-licensed advertising
-  // disclosure (Bus. & Prof. Code §7027.2) in the footer. When you're licensed,
-  // fill these in — badges, schema and the "verify" link switch on automatically.
+  // site makes NO license claims. When you're licensed, fill these in —
+  // badges, schema and the "verify" link switch on automatically.
   license: {
     number: '', // e.g. '1234567'
     classification: '', // e.g. 'C-21 Building Moving/Demolition'
