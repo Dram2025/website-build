@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<title>D.RAM Social Posts</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Barlow:wght@500;600;700&display=block">
+<style>
+/* Each .post is a 1080×1350 (4:5) feed graphic for Instagram + Facebook. */
+:root { --o:#f26a1b; --k:#000; --steel:#16181b; --silver:#cfd2d6; }
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { background: #333; display: flex; flex-wrap: wrap; gap: 40px; padding: 40px; }
+.post { width: 1080px; height: 1350px; position: relative; overflow: hidden; background: var(--k); color: #fff; font-family: 'Barlow', sans-serif; }
+.photo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.shade { position: absolute; inset: 0; }
+.logo { position: absolute; width: 330px; background: #000; padding: 14px 20px; border-radius: 12px; box-shadow: 0 0 0 3px rgba(242,106,27,.9); }
+.hd { font: 800 112px/0.92 'Barlow Condensed', sans-serif; text-transform: uppercase; letter-spacing: .005em; }
+.hd em { font-style: normal; color: var(--o); }
+.kick { display: inline-block; background: var(--o); color: #000; font: 800 34px/1 'Barlow Condensed', sans-serif; letter-spacing: .12em; text-transform: uppercase; padding: 12px 20px; }
+.body { font: 600 36px/1.3 'Barlow', sans-serif; color: #e7e9eb; }
+.foot { position: absolute; left: 0; right: 0; bottom: 0; height: 132px; background: var(--o); color: #000; display: flex; align-items: center; justify-content: space-between; padding: 0 60px; }
+.foot .ph { font: 800 70px/1 'Barlow Condensed', sans-serif; letter-spacing: .01em; }
+.foot .ph small { display: block; font: 800 22px/1 'Barlow Condensed', sans-serif; letter-spacing: .16em; margin-bottom: 6px; }
+.foot .web { font: 800 40px/1 'Barlow Condensed', sans-serif; text-align: right; }
+.foot .web small { display: block; font: 700 22px/1.2 'Barlow', sans-serif; letter-spacing: 0; }
+.tex { position: absolute; inset: 0; background: repeating-linear-gradient(135deg, rgba(255,255,255,.03) 0 3px, transparent 3px 22px); }
+.chips { display: flex; flex-wrap: wrap; gap: 14px; }
+.chips span { border: 3px solid var(--o); color: #fff; font: 700 30px/1 'Barlow Condensed', sans-serif; letter-spacing: .06em; text-transform: uppercase; padding: 12px 18px; }
+.tag { position: absolute; top: 40px; padding: 10px 18px; font: 800 30px/1 'Barlow Condensed', sans-serif; letter-spacing: .12em; text-transform: uppercase; }
+.list { list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 52px 30px; }
+.list li { display: flex; align-items: center; gap: 18px; white-space: nowrap; font: 800 43px/1.05 'Barlow Condensed', sans-serif; text-transform: uppercase; }
+.list li::before { content: ''; width: 22px; height: 22px; background: var(--o); flex: none; }
+.steps { list-style: none; display: grid; gap: 54px; counter-reset: s; }
+.steps li { display: flex; gap: 28px; align-items: flex-start; counter-increment: s; }
+.steps li::before { content: counter(s); flex: none; width: 92px; height: 92px; border-radius: 50%; background: var(--o); color: #000; display: grid; place-items: center; font: 800 56px/1 'Barlow Condensed', sans-serif; }
+.steps b { display: block; font: 800 60px/1 'Barlow Condensed', sans-serif; text-transform: uppercase; margin: 6px 0 8px; }
+.steps p { font: 600 36px/1.3 'Barlow', sans-serif; color: #d6d9dc; }
+</style></head>
+<body>
+
+<!-- 1 · INTRO / BRAND -->
+<section class="post" id="p1">
+  <img class="photo" src="home-hero.webp" alt="">
+  <div class="shade" style="background:linear-gradient(180deg,rgba(0,0,0,.55) 0%,rgba(0,0,0,.25) 30%,rgba(0,0,0,.82) 62%,#000 82%)"></div>
+  <img class="logo" src="logo.webp" style="left:60px;top:56px" alt="">
+  <div style="position:absolute;left:60px;right:60px;top:690px">
+    <span class="kick">Now booking · Orange County</span>
+    <h1 class="hd" style="margin-top:26px">Demolition, <em>concrete removal</em> &amp; hauling</h1>
+    <p class="body" style="margin-top:24px">Homes, remodels and commercial jobs. Free written estimates, debris hauled away, site left clean.</p>
+  </div>
+  <div class="foot"><div class="ph"><small>Call or text</small>714-872-6566</div><div class="web">dramdemo.com<small>Free estimates</small></div></div>
+</section>
+
+<!-- 2 · SERVICES -->
+<section class="post" id="p2" style="background:var(--steel)">
+  <div class="tex"></div>
+  <img class="logo" src="logo.webp" style="left:50%;top:70px;transform:translateX(-50%);width:420px" alt="">
+  <div style="position:absolute;left:70px;right:70px;top:380px">
+    <h1 class="hd" style="font-size:118px;text-align:center">What we <em>tear out</em></h1>
+    <div style="height:6px;width:200px;background:var(--o);margin:30px auto 56px"></div>
+    <ul class="list">
+      <li>House &amp; garage demo</li><li>Commercial demolition</li>
+      <li>Interior strip-outs</li><li>Concrete &amp; driveways</li>
+      <li>Block walls &amp; patios</li><li>Asphalt removal</li>
+      <li>Debris hauling</li><li>Junk removal</li>
+    </ul>
+    <p class="body" style="text-align:center;margin-top:84px;font-size:40px">Residential &amp; commercial · All of Orange County</p>
+  </div>
+  <div class="foot"><div class="ph"><small>Call or text</small>714-872-6566</div><div class="web">dramdemo.com<small>Free estimates</small></div></div>
+</section>
+
+<!-- 3 · JOB SPOTLIGHT: CHIMNEY -->
+<section class="post" id="p3">
+  <img class="photo" src="chimney-removal-before.webp" alt="" style="object-position:50% 40%">
+  <div class="shade" style="background:linear-gradient(180deg,rgba(0,0,0,.1) 0%,rgba(0,0,0,.05) 35%,rgba(0,0,0,.85) 66%,#000 84%)"></div>
+  <span class="tag" style="left:60px;background:var(--o);color:#000">Job spotlight</span>
+  <img class="logo" src="logo.webp" style="right:50px;top:36px;width:250px" alt="">
+  <div style="position:absolute;left:60px;right:60px;top:860px">
+    <h1 class="hd" style="font-size:100px">Brick chimney? <em>Coming down.</em></h1>
+    <p class="body" style="margin-top:20px">Taken down brick by brick, roof and yard protected, every piece hauled off.</p>
+  </div>
+  <div class="foot"><div class="ph"><small>Call or text</small>714-872-6566</div><div class="web">dramdemo.com<small>Free estimates</small></div></div>
+</section>
+
+<!-- 4 · REMODEL / INTERIOR -->
+<section class="post" id="p4">
+  <img class="photo" src="selective-demolition-1.webp" alt="" style="object-position:50% 60%">
+  <div class="shade" style="background:linear-gradient(180deg,rgba(0,0,0,.88) 0%,rgba(0,0,0,.6) 34%,rgba(0,0,0,.05) 60%,rgba(0,0,0,.25) 100%)"></div>
+  <div style="position:absolute;left:60px;right:60px;top:70px">
+    <span class="kick">Contractors &amp; homeowners</span>
+    <h1 class="hd" style="margin-top:26px;font-size:104px">Remodel starting? <em>We handle the demo.</em></h1>
+    <div class="chips" style="margin-top:30px"><span>Kitchens</span><span>Bathrooms</span><span>Flooring</span><span>Strip-outs</span></div>
+  </div>
+  <div class="foot"><div class="ph"><small>Call or text</small>714-872-6566</div><div class="web">dramdemo.com<small>Free estimates</small></div></div>
+</section>
+
+<!-- 5 · HOW TO GET AN ESTIMATE -->
+<section class="post" id="p5" style="background:#000">
+  <img class="photo" src="debris-hauling-1.webp" alt="" style="opacity:.28;object-position:50% 70%">
+  <div class="shade" style="background:linear-gradient(180deg,#000 0%,rgba(0,0,0,.6) 40%,rgba(0,0,0,.9) 100%)"></div>
+  <img class="logo" src="logo.webp" style="left:60px;top:56px;width:280px" alt="">
+  <div style="position:absolute;left:60px;right:60px;top:270px">
+    <h1 class="hd" style="font-size:112px">Free estimate in <em>3 easy steps</em></h1>
+    <ol class="steps" style="margin-top:56px">
+      <li><div><b>Snap a few photos</b><p>The area, the edges, and the path to the street.</p></div></li>
+      <li><div><b>Text them to us</b><p>714-872-6566 — or upload at dramdemo.com.</p></div></li>
+      <li><div><b>Get a written price</b><p>Clear, itemized, haul-off included. No surprises.</p></div></li>
+    </ol>
+  </div>
+  <div class="foot"><div class="ph"><small>Call or text</small>714-872-6566</div><div class="web">dramdemo.com<small>Free estimates</small></div></div>
+</section>
+
+</body></html>
