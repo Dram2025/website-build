@@ -3,6 +3,10 @@
   command = "npm run build:prod"
   publish = "dist"
   functions = "netlify/functions"
+  # Only rebuild when the website itself changed. Commits that touch just
+  # marketing/, handoff/ or docs/ are skipped, saving Netlify build credits.
+  # (exit 0 = skip the build; exit 1 = build)
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- src/ build.mjs package.json netlify.toml netlify/"
 
 [build.environment]
   NODE_VERSION = "20"
