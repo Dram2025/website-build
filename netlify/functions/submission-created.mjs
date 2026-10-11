@@ -17,7 +17,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const env = (k) => process.env[k] || '';
-const PHONE = env('BUSINESS_PHONE') || '714-872-6566';
+const PHONE = env('BUSINESS_PHONE') || '714-872-2034';
 
 const HIGH = ['Residential Demolition', 'Commercial Demolition'];
 const MEDIUM = ['Selective Demolition', 'Concrete Demolition', 'Concrete Slab Removal', 'Garage Demolition', 'Retaining Wall Removal', 'Asphalt Removal', 'Driveway Removal', 'Block Wall Demolition', 'Patio Removal'];

@@ -17,14 +17,14 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 > ✅ Haul-off included
 > ✅ Residential & commercial
 >
-> 📲 Call or text 714-872-6566 or tap the link in bio for a free estimate.
+> 📲 Call or text 714-872-2034 or tap the link in bio for a free estimate.
 >
 > #orangecountydemolition #demolition #concreteremoval #ocremodel #fullerton #anaheim #santaana #irvine #huntingtonbeach #orangecounty #demolitioncontractor #haulaway #adu #remodeling #generalcontractor
 
 **Facebook**
 > Now booking demolition, concrete removal and hauling jobs across Orange County. Remodel demo, driveways and patios, garages and ADU site prep, commercial strip-outs — we tear it out, haul it away and leave the site clean.
 >
-> Free written estimates. Call or text 714-872-6566 or request one at dramdemo.com/estimate
+> Free written estimates. Call or text 714-872-2034 or request one at dramdemo.com/estimate
 
 ---
 
@@ -42,12 +42,12 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 > 🚛 Debris hauling
 > 🗑️ Junk removal
 >
-> Homeowners and contractors across Orange County — send us photos for a fast quote. 📲 714-872-6566
+> Homeowners and contractors across Orange County — send us photos for a fast quote. 📲 714-872-2034
 >
 > #demolition #orangecounty #concreteremoval #driveway #junkremoval #debrisremoval #interiordemolition #ocbusiness #contractorlife #demolitioncontractor
 
 **Facebook**
-> Here's everything we tear out, from a single patio to a full commercial strip-out. Homeowners and contractors across Orange County: text photos of your project to 714-872-6566 for a fast, free quote.
+> Here's everything we tear out, from a single patio to a full commercial strip-out. Homeowners and contractors across Orange County: text photos of your project to 714-872-2034 for a fast, free quote.
 
 ---
 
@@ -58,12 +58,12 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 >
 > We take chimneys down from the top, brick by brick — roof, windows and yard protected the whole way, and every piece hauled off. Old unreinforced brick chimneys are a real earthquake risk here in SoCal.
 >
-> Thinking about removing yours? Text a photo to 714-872-6566.
+> Thinking about removing yours? Text a photo to 714-872-2034.
 >
 > #chimneyremoval #chimneydemolition #demolition #orangecounty #ocremodel #brickchimney #earthquakesafety #homeimprovement #demolitioncontractor
 
 **Facebook**
-> Job spotlight: brick chimney coming down, top to bottom, with the roof and yard protected and every brick hauled off. Unreinforced brick chimneys are a known earthquake risk in Southern California. Thinking about removing yours? Text a photo to 714-872-6566 for a free quote.
+> Job spotlight: brick chimney coming down, top to bottom, with the roof and yard protected and every brick hauled off. Unreinforced brick chimneys are a known earthquake risk in Southern California. Thinking about removing yours? Text a photo to 714-872-2034 for a free quote.
 
 ---
 
@@ -74,12 +74,12 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 >
 > Kitchens, bathrooms, flooring and full interior strip-outs — taken down to what your plan calls for, debris out the same day, and a clean space handed to the next trade.
 >
-> General contractors: send us your scope and we'll get you a written bid. 📲 714-872-6566
+> General contractors: send us your scope and we'll get you a written bid. 📲 714-872-2034
 >
 > #interiordemolition #kitchenremodel #bathroomremodel #remodeling #generalcontractor #orangecounty #demolition #tenantimprovement #ocremodel #contractor
 
 **Facebook**
-> Remodel starting? Let us handle the demo. Kitchens, bathrooms, flooring and full strip-outs, with debris hauled out daily and the space handed back clean for your next trade. General contractors: send us your scope for a written bid. 714-872-6566
+> Remodel starting? Let us handle the demo. Kitchens, bathrooms, flooring and full strip-outs, with debris hauled out daily and the space handed back clean for your next trade. General contractors: send us your scope for a written bid. 714-872-2034
 
 ---
 
@@ -89,7 +89,7 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 > Getting a demolition price shouldn't take a week. ⏱️
 >
 > 1️⃣ Snap a few photos — the area, the edges, and the path to the street
-> 2️⃣ Text them to 714-872-6566 (or upload at the link in bio)
+> 2️⃣ Text them to 714-872-2034 (or upload at the link in bio)
 > 3️⃣ Get a clear, written price — haul-off included
 >
 > That's it. 📸➡️💲
@@ -97,7 +97,7 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 > #freeestimate #demolition #concreteremoval #orangecounty #junkremoval #haulaway #homeowner #ochomes #contractor
 
 **Facebook**
-> Getting a demolition price is easy: snap a few photos, text them to 714-872-6566 (or upload at dramdemo.com/estimate), and we'll send a clear written price with haul-off included.
+> Getting a demolition price is easy: snap a few photos, text them to 714-872-2034 (or upload at dramdemo.com/estimate), and we'll send a clear written price with haul-off included.
 
 ---
 
@@ -113,4 +113,4 @@ Each graphic is 1080 × 1350 (4:5), the best-performing size for both feeds. Pos
 | **Customer shout-out** | A real review (with permission) over a job photo. |
 | **Local tags** | Mention the city in every job post: "Patio removal in Fullerton." |
 
-Always: tag the city, include "call or text 714-872-6566", and reply to every comment and DM within the hour.
+Always: tag the city, include "call or text 714-872-2034", and reply to every comment and DM within the hour.

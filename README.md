@@ -79,7 +79,7 @@ Set these in Netlify → Site configuration → Environment variables. Each chan
 | `TWILIO_ACCOUNT_SID`, `TWILIO_AUTH_TOKEN`, `TWILIO_FROM` | Customer confirmation texts (opt-in only) + owner alerts. US numbers need A2P 10DLC registration. |
 | `OWNER_SMS_TO` | Your cell, for instant alerts on **Hot** or **High value** leads |
 | `CRM_WEBHOOK_URL` | Receives each lead as JSON: Zapier/Make → Jobber, HubSpot, Housecall Pro, Google Sheets, etc. |
-| `BUSINESS_PHONE` | Phone shown in confirmations (defaults to 714-872-6566) |
+| `BUSINESS_PHONE` | Phone shown in confirmations (defaults to 714-872-2034) |
 
 Every lead is tagged **Residential/Commercial**, **Hot/Warm/Nurture** (timeline or bid date), a **value tier** (service + approximate area), and a **priority score** 0–100. The tags appear in the email subject line and in the CRM payload.
 

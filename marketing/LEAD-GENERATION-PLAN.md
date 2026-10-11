@@ -12,7 +12,7 @@ Goal: a steady flow of demolition, concrete-removal and hauling jobs from Orange
 1. Go to **business.google.com** → add **D.RAM Demolition & Hauling**.
 2. Category: **Demolition contractor**. Add secondary categories only for work you do (e.g. *Concrete contractor*, *Debris removal service*, *Junk removal service*).
 3. Choose **"I deliver goods and services to my customers"** and **hide your address**. Add service areas: Fullerton, Anaheim, Orange, Santa Ana, Irvine, Huntington Beach and the other OC cities you serve (max 20).
-4. Phone 714-872-6566. Website: `https://dramdemo.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`
+4. Phone 714-872-2034. Website: `https://dramdemo.com/?utm_source=google&utm_medium=organic&utm_campaign=gbp`
 5. Hours, services (copy the 14 service names from the website), and **at least 10 photos** of real jobs.
 6. Verify (Google may ask for a video of your truck/equipment and tools).
 7. **Reviews:** after every job, text the customer your Google review link. 10+ real reviews makes a big difference. Reply to every one.

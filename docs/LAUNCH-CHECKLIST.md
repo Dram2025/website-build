@@ -33,7 +33,7 @@ Work top to bottom. Items marked ⚑ block launch.
 - [ ] GA4 property created **in the company's Google account**. `ga4Id` set.
 - [ ] GA4 → Admin → Events: mark `generate_lead` and `click_to_call` as **key events**.
 - [ ] (If running ads) Google Ads conversions created for form leads and phone clicks. `googleAdsId` and labels set. GA4 linked to Ads.
-- [ ] (Optional) Call tracking such as CallRail with dynamic number insertion **for ad traffic only**. Keep 714-872-6566 as the number in the HTML for NAP consistency.
+- [ ] (Optional) Call tracking such as CallRail with dynamic number insertion **for ad traffic only**. Keep 714-872-2034 as the number in the HTML for NAP consistency.
 - [ ] Confirm events in GA4 → Realtime / DebugView after a test lead.
 
 ## Search

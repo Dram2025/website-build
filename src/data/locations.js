@@ -11,7 +11,7 @@ export const locations = [
     name: 'Fullerton',
     title: 'Demolition & Concrete Removal in Fullerton, CA | D.RAM Demolition',
     description:
-      'Fullerton demolition contractor for driveway removal, concrete demolition, garage tear-downs and hauling. Local crew, free estimates. Call 714-872-6566.',
+      'Fullerton demolition contractor for driveway removal, concrete demolition, garage tear-downs and hauling. Local crew, free estimates. Call 714-872-2034.',
     h1: 'Demolition & Concrete Removal in Fullerton',
     lede: 'Fullerton is our home market. From pre-war bungalows near downtown to mid-century homes in Sunny Hills, we know the housing stock, the streets and the permit counter.',
     intro: [
@@ -38,7 +38,7 @@ export const locations = [
     name: 'Anaheim',
     title: 'Anaheim Demolition Contractor | Concrete Removal | D.RAM Demolition',
     description:
-      'Anaheim demolition and concrete removal — from west Anaheim tract homes to Anaheim Hills slopes and commercial sites. Free estimates. Call 714-872-6566.',
+      'Anaheim demolition and concrete removal — from west Anaheim tract homes to Anaheim Hills slopes and commercial sites. Free estimates. Call 714-872-2034.',
     h1: 'Demolition Contractor in Anaheim',
     lede: 'Orange County’s largest city covers everything from 1950s flat-lot tracts to Anaheim Hills slopes and active commercial redevelopment. We work across all of it.',
     intro: [
@@ -65,7 +65,7 @@ export const locations = [
     name: 'Orange',
     title: 'Demolition Contractor in Orange, CA | Concrete Removal | D.RAM',
     description:
-      'Demolition and concrete removal in the City of Orange — Old Towne, Orange Park Acres, East Orange and beyond. Permit-aware, free estimates. Call 714-872-6566.',
+      'Demolition and concrete removal in the City of Orange — Old Towne, Orange Park Acres, East Orange and beyond. Permit-aware, free estimates. Call 714-872-2034.',
     h1: 'Demolition & Concrete Removal in Orange, CA',
     lede: 'From Old Towne’s historic district to Orange Park Acres’ large lots and the hillside homes of East Orange, the City of Orange asks for a careful, permit-aware contractor.',
     intro: [
@@ -92,7 +92,7 @@ export const locations = [
     name: 'Santa Ana',
     title: 'Santa Ana Demolition & Concrete Removal Contractor | D.RAM',
     description:
-      'Santa Ana demolition contractor: residential tear-downs, commercial and industrial demolition, concrete removal and hauling. Call 714-872-6566.',
+      'Santa Ana demolition contractor: residential tear-downs, commercial and industrial demolition, concrete removal and hauling. Call 714-872-2034.',
     h1: 'Demolition & Concrete Removal in Santa Ana',
     lede: 'Santa Ana’s historic neighborhoods, dense residential streets and industrial south side each need a different approach to demolition — we bring the right one.',
     intro: [
@@ -119,7 +119,7 @@ export const locations = [
     name: 'Irvine',
     title: 'Irvine Demolition Contractor | Residential & Commercial | D.RAM',
     description:
-      'Demolition in Irvine for homeowners, HOAs and commercial tenants — HOA-compliant hardscape removal, interior remodel demolition and TI strip-outs. Call 714-872-6566.',
+      'Demolition in Irvine for homeowners, HOAs and commercial tenants — HOA-compliant hardscape removal, interior remodel demolition and TI strip-outs. Call 714-872-2034.',
     h1: 'Demolition Contractor in Irvine',
     lede: 'In master-planned Irvine, demolition is as much about HOA approvals, quiet hours and clean job sites as it is about concrete. We work the way Irvine communities expect.',
     intro: [
@@ -146,7 +146,7 @@ export const locations = [
     name: 'Huntington Beach',
     title: 'Huntington Beach Demolition & Concrete Removal | D.RAM Demolition',
     description:
-      'Demolition and concrete removal in Huntington Beach — coastal homes, garage tear-downs, patio and driveway removal. Salt-air concrete experience. Call 714-872-6566.',
+      'Demolition and concrete removal in Huntington Beach — coastal homes, garage tear-downs, patio and driveway removal. Salt-air concrete experience. Call 714-872-2034.',
     h1: 'Demolition & Concrete Removal in Huntington Beach',
     lede: 'Coastal demolition comes with its own conditions — salt-damaged concrete, sandy soils, Coastal Zone rules and tight beach-area lots. We plan for all of them.',
     intro: [

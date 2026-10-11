@@ -9,8 +9,8 @@ export const site = {
   name: 'D.RAM Demolition & Hauling',
   shortName: 'D.RAM Demolition',
   url: 'https://dramdemo.com', // primary domain in Netlify; www.dramdemo.com redirects here
-  phone: '714-872-6566',
-  phoneE164: '+17148726566',
+  phone: '714-872-2034',
+  phoneE164: '+17148722034',
   email: 'david@dramdemo.com',
 
   // California Contractors State License Board. While `number` is empty the
