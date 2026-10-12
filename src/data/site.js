@@ -56,7 +56,7 @@ export const site = {
   tracking: {
     ga4Id: '', // G-XXXXXXXXXX
     gtmId: '', // GTM-XXXXXXX (optional; use instead of / alongside GA4)
-    googleAdsId: '', // AW-XXXXXXXXX
+    googleAdsId: 'AW-18507597026', // AW-XXXXXXXXX
     googleAdsLeadLabel: '', // conversion label for form leads
     googleAdsCallLabel: '', // conversion label for phone-click
     gscVerification: '', // Google Search Console HTML-tag token
