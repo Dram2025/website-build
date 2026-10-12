@@ -1,5 +1,7 @@
 # D.RAM Demolition & Hauling — Website
 
+> **Also in this repo:** [`stellar/`](stellar/README.md) is the separate website for the sister company Stellar Haul Away (junk removal). It deploys as its own Netlify site with base directory `stellar`.
+
 A lead-generation website for an Orange County demolition contractor. It is built to rank in Google, earn trust quickly, and turn visitors into estimate requests. It's a static site with no framework and no runtime dependencies. It's fast, cheap to host, and you own it outright.
 
 | | |

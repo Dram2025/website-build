@@ -1,0 +1,15 @@
+{
+  "name": "stellar-haul-away-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website for Stellar Haul Away: junk removal, light demolition and material delivery (Fullerton, CA)",
+  "type": "module",
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "build": "node build.mjs",
+    "build:prod": "node build.mjs --prod",
+    "serve": "npx --yes serve@14.2.4 dist -l 4174",
+    "test": "node build.mjs && node scripts/audit.mjs",
+    "logo": "node brand/make-logo.mjs"
+  }
+}

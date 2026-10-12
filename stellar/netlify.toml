@@ -1,0 +1,41 @@
+# Netlify: create a NEW site from this same GitHub repo and set
+#   Base directory = stellar
+# Netlify then reads this file (not the D.RAM one at the repo root).
+[build]
+  command = "npm run build:prod"
+  publish = "dist"
+  # Only rebuild when the Stellar site changed (exit 0 = skip).
+  ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- ."
+
+[build.environment]
+  NODE_VERSION = "20"
+
+[context.deploy-preview]
+  command = "npm run build"
+[context.branch-deploy]
+  command = "npm run build"
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    X-Frame-Options = "SAMEORIGIN"
+    Permissions-Policy = "camera=(), microphone=(), geolocation=()"
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+[[headers]]
+  for = "/assets/css/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/assets/js/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+[[headers]]
+  for = "/assets/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=2592000"
+[[headers]]
+  for = "/assets/photos/*"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
