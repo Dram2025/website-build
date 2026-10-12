@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>D.RAM Email Signature</title>
+<style>
+  body { margin: 0; background: #f2f2f2; font-family: Arial, Helvetica, sans-serif; color: #222; }
+  .wrap { max-width: 760px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 22px; margin: 0 0 6px; }
+  .note { font-size: 14px; line-height: 1.55; color: #444; }
+  .note ol { padding-left: 20px; margin: 8px 0 0; }
+  .box { background: #fff; border: 2px dashed #f26a1b; border-radius: 8px; padding: 24px 20px; margin: 22px 0; }
+  .label { font-size: 12px; font-weight: bold; letter-spacing: .08em; text-transform: uppercase; color: #f26a1b; margin: 0 0 14px; }
+  button { font: bold 15px Arial, sans-serif; background: #f26a1b; color: #000; border: 0; border-radius: 6px; padding: 12px 18px; cursor: pointer; }
+  #copied { font-size: 14px; color: #1a7f37; margin-left: 10px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>D.RAM Demolition: Gmail signature</h1>
+  <div class="note">
+    <strong>How to install (on a computer, about 2 minutes):</strong>
+    <ol>
+      <li>Click <strong>Copy signature</strong> below (or drag to highlight everything inside the orange box and press Ctrl+C / Cmd+C).</li>
+      <li>Open <strong>Gmail → ⚙️ Settings → See all settings → General</strong>, scroll to <strong>Signature</strong>, click <strong>+ Create new</strong> and name it <em>D.RAM</em>.</li>
+      <li>Click inside the signature box and paste (Ctrl+V / Cmd+V). The logo should appear.</li>
+      <li>Below the box, set <strong>For new emails use</strong> and <strong>On reply/forward use</strong> to <em>D.RAM</em>.</li>
+      <li>Scroll to the bottom and click <strong>Save Changes</strong>. Send yourself a test email.</li>
+    </ol>
+  </div>
+
+  <div class="box">
+    <p class="label">Signature (everything below this line)</p>
+    <div id="sig">
+<table cellpadding="0" cellspacing="0" border="0" style="border-collapse:collapse;font-family:Arial,Helvetica,sans-serif;color:#222222;">
+  <tr>
+    <td style="padding:0 0 10px 0;">
+      <a href="https://dramdemo.com/?utm_source=email_signature&amp;utm_medium=email" style="text-decoration:none;"><img src="https://dramdemo.com/assets/img/email-logo.png" width="260" height="78" alt="D.RAM Demolition" style="display:block;border:0;width:260px;height:78px;border-radius:4px;"></a>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:0;font-size:16px;line-height:22px;font-weight:bold;color:#111111;">David Ramirez <span style="font-weight:normal;color:#666666;">| Owner</span></td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 8px 0;font-size:13px;line-height:19px;color:#444444;">D.RAM Demolition &amp; Hauling</td>
+  </tr>
+  <tr>
+    <td style="padding:0 0 8px 0;border-top:3px solid #f26a1b;font-size:0;line-height:0;width:260px;">&nbsp;</td>
+  </tr>
+  <tr>
+    <td style="padding:0;font-size:13px;line-height:21px;color:#222222;">
+      <strong style="color:#f26a1b;">Call or Text:</strong> <a href="tel:+17148722034" style="color:#222222;text-decoration:none;">714-872-2034</a><br>
+      <strong style="color:#f26a1b;">Email:</strong> <a href="mailto:david@dramdemo.com" style="color:#222222;text-decoration:none;">david@dramdemo.com</a><br>
+      <strong style="color:#f26a1b;">Web:</strong> <a href="https://dramdemo.com/?utm_source=email_signature&amp;utm_medium=email" style="color:#222222;text-decoration:none;">dramdemo.com</a>
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:8px 0 0 0;font-size:12px;line-height:18px;color:#666666;white-space:nowrap;">
+      Demolition &middot; Concrete Removal &middot; Hauling &middot; Junk Removal<br>
+      Fullerton, CA &middot; Serving all of Orange County
+    </td>
+  </tr>
+  <tr>
+    <td style="padding:12px 0 0 0;">
+      <a href="https://dramdemo.com/estimate/?utm_source=email_signature&amp;utm_medium=email" style="display:inline-block;background:#f26a1b;color:#000000;font-size:13px;font-weight:bold;line-height:16px;padding:9px 14px;border-radius:4px;text-decoration:none;">Get a Free Estimate &rarr;</a>
+    </td>
+  </tr>
+</table>
+    </div>
+  </div>
+
+  <button type="button" id="copy">Copy signature</button><span id="copied" hidden>Copied! Now paste it into Gmail.</span>
+  <p class="note" style="margin-top:18px;">If the logo shows as a broken image in Gmail, wait a few minutes for the website to update, or open <a href="https://dramdemo.com/assets/img/email-logo.png">dramdemo.com/assets/img/email-logo.png</a> to confirm it loads, then paste again.</p>
+</div>
+<script>
+document.getElementById('copy').addEventListener('click', async () => {
+  const sig = document.getElementById('sig');
+  try {
+    await navigator.clipboard.write([new ClipboardItem({
+      'text/html': new Blob([sig.innerHTML], { type: 'text/html' }),
+      'text/plain': new Blob([sig.innerText], { type: 'text/plain' }),
+    })]);
+  } catch (e) {
+    const r = document.createRange(); r.selectNodeContents(sig);
+    const s = getSelection(); s.removeAllRanges(); s.addRange(r);
+    document.execCommand('copy'); s.removeAllRanges();
+  }
+  document.getElementById('copied').hidden = false;
+});
+</script>
+</body>
+</html>
