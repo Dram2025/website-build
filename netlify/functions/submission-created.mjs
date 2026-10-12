@@ -130,10 +130,15 @@ export const handler = async (event) => {
   if (d.company_website) return { statusCode: 200, body: 'ignored' }; // honeypot
 
   const s = scoreLead(form, d);
-  const label = `[${s.urgency}${s.valueTier === 'High' ? ' · High value' : ''}] ${d.service || d.project_name || 'New request'} — ${d.city || 'n/a'} — ${d.name || ''}`;
+  // No phone and no email means nobody can be contacted. page_url is filled by the
+  // site's script, so when it is empty the form was posted without the website
+  // (usually a spam bot). Flag these for the owner and skip all automations.
+  const incomplete = !d.phone && !d.email;
+  const flag = incomplete ? (d.page_url ? '[INCOMPLETE – no contact info] ' : '[LIKELY SPAM – no contact info, not sent from the website] ') : '';
+  const label = `${flag}[${s.urgency}${s.valueTier === 'High' ? ' · High value' : ''}] ${d.service || d.project_name || 'New request'} — ${d.city || 'n/a'} — ${d.name || ''}`;
   const notify = env('LEAD_NOTIFY_TO').split(',').map((x) => x.trim()).filter(Boolean);
 
-  const jobs = {
+  const jobs = incomplete ? { ownerEmail: resend(notify, label, ownerEmail(form, d, s)) } : {
     ownerEmail: resend(notify, label, ownerEmail(form, d, s), d.email),
     customerEmail: form === 'contact' && !d.email ? Promise.resolve('skipped') : resend(d.email, form === 'commercial-bid' ? 'We received your bid request — D.RAM Demolition' : 'We received your estimate request — D.RAM Demolition', customerEmail(form, d)),
     customerSms: d.sms_consent === 'yes' ? sms(e164(d.phone), `D.RAM Demolition: Thanks ${String(d.name || '').split(' ')[0]}! We got your ${d.service ? d.service.toLowerCase() : ''} request and will contact you within 1 business day. Questions: ${PHONE}. Reply STOP to opt out.`) : Promise.resolve('skipped'),

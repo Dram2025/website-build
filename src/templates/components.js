@@ -226,7 +226,7 @@ export function estimateForm(ctx) {
   const radios = (name, opts, req = true) =>
     opts.map((o, i) => `<label class="opt"><input type="radio" name="${name}" value="${esc(o)}"${req && i === 0 ? ' required' : ''}><span>${esc(o)}</span></label>`).join('');
   const checks = (name, opts) => opts.map((o) => `<label class="opt"><input type="checkbox" name="${name}" value="${esc(o)}"><span>${esc(o)}</span></label>`).join('');
-  return `<form class="lform" id="estimate-form" name="estimate" method="POST" action="/thank-you/?form=estimate" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company_website" data-lead-form data-steps novalidate>
+  return `<form class="lform" id="estimate-form" name="estimate" method="POST" action="/thank-you/?form=estimate" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company_website" data-lead-form data-steps>
   <input type="hidden" name="form-name" value="estimate">
   ${attribution()}${honeypot()}
   <ol class="lform__progress" aria-hidden="true"><li class="is-on">Project</li><li>Details &amp; photos</li><li>Contact</li></ol>
@@ -286,7 +286,7 @@ export function estimateForm(ctx) {
 
 export function bidForm(ctx) {
   const checks = (name, opts) => opts.map((o) => `<label class="opt"><input type="checkbox" name="${name}" value="${esc(o)}"><span>${esc(o)}</span></label>`).join('');
-  return `<form class="lform" id="bid-form" name="commercial-bid" method="POST" action="/thank-you/?form=commercial-bid" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company_website" data-lead-form novalidate>
+  return `<form class="lform" id="bid-form" name="commercial-bid" method="POST" action="/thank-you/?form=commercial-bid" enctype="multipart/form-data" data-netlify="true" netlify-honeypot="company_website" data-lead-form>
   <input type="hidden" name="form-name" value="commercial-bid">
   ${attribution()}${honeypot()}
   <fieldset>

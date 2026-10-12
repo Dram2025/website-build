@@ -254,6 +254,9 @@
 
   // ── Submission ────────────────────────────────────────────────────────────
   $$('form[data-lead-form]').forEach((form) => {
+    // Our own validation runs here; the browser's built-in required-field check
+    // stays on in the HTML so the form can't be sent half-empty if this script fails.
+    form.noValidate = true;
     const started = Date.now();
     let begun = false;
     form.addEventListener('focusin', () => {
